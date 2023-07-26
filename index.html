@@ -23,7 +23,7 @@
 <body class="font-lato">
   <header class="container mx-auto">
     <!-- nav bar starts here -->
-    <nav class="lg:bg-[#F85559] lg:text-white lg:rounded-[600px] lg:p-2 my-12">
+    <nav class="lg:bg-[#F85559] lg:text-white lg:rounded-[600px]  lg:p-2 my-12">
       <div class="navbar ">
         <div class="navbar-start">
           <div class="dropdown">
@@ -59,7 +59,7 @@
     </nav>
     <!-- nav bar ends here -->
     <!-- banner section starts -->
-    <div class="carousel w-full relative z-10">
+    <div class="carousel w-full relative mt-14 z-10">
       <!-- slider -1 -->
       <div
         style="background-image:  url('./images/banner1.png'); background-size: cover; background: linear-gradient( );"
@@ -155,11 +155,11 @@
   </header>
   <main class="container mx-auto">
     <!-- deal section starts -->
-    <section class="mt-10 lg:mt-36">
+    <section class="mt-10 lg:mt-40">
       <div class="flex flex-col lg:flex-row text-center lg:text-left justify-between ">
         <div class="text-center lg:text-left">
           <h1 class="text-xl lg:text-5xl font-extrabold text-[#121212]">Deal of the day</h1>
-          <p class="text-sm lg:text-base text-[#121212]">Contrary to popular belief, is not simply random text. It has roots in a piece of
+          <p class="text-sm lg:text-base text-[#12121299]">Contrary to popular belief, is not simply random text. It has roots in a piece of
             classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
         <div class="mx-auto md:mx-auto lg:mx-0 mt-7 lg:mt-0">
@@ -213,7 +213,31 @@
               <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
               <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
             </div>
-            <button class="text-[#F85559] mt-8">Details</button>
+           <button class=" text-[#F85559]" onclick="my_modal_1.showModal()">Details</button>
+            <dialog id="my_modal_1" class="modal">
+              <form method="dialog" class="modal-box">
+                <img class="mx-auto lg:w-64" src="./images/fruit6.png" alt="">
+                <h3 class="font-bold text-lg mt-6 lg:text-4xl ">Apples!</h3>
+                <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="rating w-32 rating-lg rating-half text-center mt-6">
+                  <input type="radio" name="rating-10" class="rating-hidden" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                </div>
+                <div class="modal-action flex justify-center">
+                  <button class="btn bg-white border-red-400  text-[#F85559]">Close</button>
+                  <button class="btn bg-[#F85559]  text-white">Buy now</button>
+                </div>
+              </form>
+            </dialog>
           </div>
           
         </div>
@@ -239,7 +263,31 @@
               <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
               <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
             </div>
-            <button class="text-[#F85559] mt-8">Details</button>
+            <button class=" text-[#F85559]" onclick="my_modal_2.showModal()">Details</button>
+            <dialog id="my_modal_2" class="modal">
+              <form method="dialog" class="modal-box">
+                <img class="mx-auto lg:w-64" src="./images/fruit7.png" alt="">
+                <h3 class="font-bold text-lg mt-6 lg:text-4xl ">Orange!</h3>
+                <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="rating w-32 rating-lg rating-half text-center mt-6">
+                  <input type="radio" name="rating-10" class="rating-hidden" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                </div>
+                <div class="modal-action flex justify-center">
+                  <button class="btn bg-white border-red-400  text-[#F85559]">Close</button>
+                  <button class="btn bg-[#F85559]  text-white">Buy now</button>
+                </div>
+              </form>
+            </dialog>
           </div>
 
 
@@ -265,7 +313,31 @@
               <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
               <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
             </div>
-            <button class="text-[#F85559] mt-8">Details</button>
+            <button class=" text-[#F85559]" onclick="my_modal_3.showModal()">Details</button>
+            <dialog id="my_modal_3" class="modal">
+              <form method="dialog" class="modal-box">
+                <img class="mx-auto lg:w-64" src="./images/fruit8.png" alt="">
+                <h3 class="font-bold text-lg mt-6 lg:text-4xl ">Red Dragon</h3>
+                <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="rating w-32 rating-lg rating-half text-center mt-6">
+                  <input type="radio" name="rating-10" class="rating-hidden" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                </div>
+                <div class="modal-action flex justify-center">
+                  <button class="btn bg-white border-red-400  text-[#F85559]">Close</button>
+                  <button class="btn bg-[#F85559]  text-white">Buy now</button>
+                </div>
+              </form>
+            </dialog>
           </div>
 
 
@@ -291,7 +363,31 @@
               <input type="radio" name="rating-13" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
               <input type="radio" name="rating-13" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
             </div>
-            <button class=" text-[#F85559] mt-8">Details</button>
+            <button class=" text-[#F85559]" onclick="my_modal_4.showModal()">Details</button>
+            <dialog id="my_modal_4" class="modal">
+              <form method="dialog" class="modal-box">
+                <img class="mx-auto lg:w-64" src="./images/fruit9.png" alt="">
+                <h3 class="font-bold text-lg mt-6 lg:text-4xl ">Banana</h3>
+                <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="rating w-32 rating-lg rating-half text-center mt-6">
+                  <input type="radio" name="rating-10" class="rating-hidden" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                </div>
+                <div class="modal-action flex justify-center">
+                  <button class="btn bg-white border-red-400  text-[#F85559]">Close</button>
+                  <button class="btn bg-[#F85559]  text-white">Buy now</button>
+                </div>
+              </form>
+            </dialog>
           </div>
         </div>
       </div>
@@ -306,8 +402,8 @@
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content">
           <div class="">
-            <h1 class="mb-5 text-xl lg:text-5xl font-extrabold">Meet the team section</h1>
-            <p class="mb-8 text-sm lg:text-base">Contrary to popular belief, is not simply random text. It has roots in
+            <h1 class="mb-5 text-3xl lg:text-5xl font-extrabold">Meet the team section</h1>
+            <p class="mb-8 text-sm lg:text-base ">Contrary to popular belief, is not simply random text. It has roots in
               a piece of classical
               <br> Latin literature from 45 BC, making it over 2000 years old.
             </p>
@@ -361,7 +457,7 @@
     <!-- why choose us section starts -->
     <div class="text-center mt-36 mx-auto">
       <h3 class="text-xl lg:text-5xl font-extrabold text-[#121212] mb-6">Why Choose Us</h3>
-      <p class= "text-sm text-[#121212] font-medium">Contrary to popular belief, is not simply random text. It has roots in a
+      <p class= "text-sm text-[#12121299] font-medium">Contrary to popular belief, is not simply random text. It has roots in a
         piece of classical
         <br>
         Latin literature from 45 BC, making it over 2000 years old.
